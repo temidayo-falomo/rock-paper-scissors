@@ -9,7 +9,13 @@ function Modal() {
   const { setShowModal, showModal } = useContext(AppContext);
 
   useEffect(() => {
-    Aos.init({ duration: 1000 });
+    Aos.init({
+      duration: 1000,
+      disable: function () {
+        var maxWidth = 100;
+        return window.innerWidth < maxWidth;
+      },
+    });
   }, [showModal]);
 
   return (

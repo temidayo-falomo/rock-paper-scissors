@@ -30,7 +30,13 @@ function GameResult() {
   };
 
   useEffect(() => {
-    Aos.init({ duration: 1000 });
+    Aos.init({
+      duration: 1000,
+      disable: function () {
+        var maxWidth = 100;
+        return window.innerWidth < maxWidth;
+      },
+    });
   }, []);
 
   useEffect(() => {
