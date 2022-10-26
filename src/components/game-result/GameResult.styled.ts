@@ -110,16 +110,19 @@ export const StyledGameResult = styled.div`
     text-align: center;
     justify-content: space-between;
     gap: 2rem;
+    flex-wrap: wrap;
+    width: 90%;
 
     .mid {
-      display: none;
+      order: 3;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
     }
 
     .circle-bg {
       width: 400px !important;
-      /* top: -4rem !important;
-      left: 50% !important;
-      transform: translateX(-50%) !important; */
     }
 
     .round {

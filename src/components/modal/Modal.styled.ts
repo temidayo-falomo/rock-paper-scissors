@@ -13,9 +13,10 @@ export const StyledModal = styled.div`
 
   .modal-box {
     background-color: aliceblue;
-    color: #B1B4C4;
-    width: 400px;
+    color: #b1b4c4;
+    max-width: 400px;
     height: 400px;
+    min-width: 300px;
     border-radius: 10px;
     padding: 5%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;

@@ -11,9 +11,6 @@ export const StyledFooter = styled.footer`
   justify-content: flex-end;
   align-items: center;
 
-  /* left: 50%;
-  transform: translateX(-50%); */
-
   button {
     padding: 15px;
     border-radius: 10px;

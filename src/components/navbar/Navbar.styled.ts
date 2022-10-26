@@ -9,6 +9,7 @@ export const StyledNavbar = styled.nav`
   align-items: center;
   border-radius: 10px;
   border: 2px hsl(217, 16%, 45%) solid;
+  min-width: 300px;
 
   .logo {
     font-size: 2.5rem;
