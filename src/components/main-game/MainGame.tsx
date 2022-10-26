@@ -114,7 +114,7 @@ function MainGame() {
     Aos.init({
       duration: 900,
       disable: function () {
-        var maxWidth = 322;
+        var maxWidth = 380;
         return window.innerWidth < maxWidth;
       },
     });
