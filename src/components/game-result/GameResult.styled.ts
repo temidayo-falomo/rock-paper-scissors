@@ -78,6 +78,8 @@ export const StyledGameResult = styled.div`
     align-items: center;
     justify-content: center;
     transition: 0.5 ease all;
+    z-index: 9999;
+    position: relative;
 
     :hover {
       transform: scale(1.3);
@@ -104,7 +106,26 @@ export const StyledGameResult = styled.div`
   }
 
   @media (max-width: 1000px) {
-    /* flex-direction: column; */
+    .yellow {
+      border: 20px hsl(39, 89%, 49%) solid;
+    }
+
+    .roy-blue {
+      border: 20px hsl(230, 89%, 65%) solid;
+    }
+
+    .red {
+      border: 20px hsl(349, 70%, 56%) solid;
+    }
+
+    .purplish {
+      border: 20px hsl(261, 72%, 63%) solid;
+    }
+
+    .aqua {
+      border: 20px hsl(189, 58%, 57%) solid;
+    }
+
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -126,8 +147,8 @@ export const StyledGameResult = styled.div`
     }
 
     .round {
-      width: 120px;
-      height: 120px;
+      width: 130px;
+      height: 130px;
 
       img {
         width: 40px !important;

@@ -18,6 +18,7 @@ const GlobalStyle = createGlobalStyle`
   .App {
     overflow: hidden;
   }
+  
 
   a {
     text-decoration: none;

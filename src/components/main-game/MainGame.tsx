@@ -111,7 +111,13 @@ function MainGame() {
   const [play] = useSound(Sound, { playbackRate: 1 });
 
   useEffect(() => {
-    Aos.init({ duration: 900 });
+    Aos.init({
+      duration: 900,
+      disable: function () {
+        var maxWidth = 322;
+        return window.innerWidth < maxWidth;
+      },
+    });
   }, []);
 
   return (
@@ -175,7 +181,7 @@ function MainGame() {
         </div>
 
         <div
-          className="row btw"
+          className="row btw btm-rw"
           style={{ width: "80%", marginBottom: "-1rem" }}
         >
           <Tippy content="Lizard">

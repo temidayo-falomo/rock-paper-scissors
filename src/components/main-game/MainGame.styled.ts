@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const StyledMainGame = styled.section`
- 
   margin: 1rem auto;
   margin-top: 3rem;
   display: grid;

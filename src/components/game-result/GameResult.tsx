@@ -67,7 +67,7 @@ function GameResult() {
         <button onClick={handleButtonClick}>PLAY AGAIN</button>
       </div>
 
-      <div className="col gap-1 center right">
+      <div className="col gap-1 center right" data-aos="zoom-in">
         {result === "Lose" && (
           <img
             src="./images/circle-bg.png"
@@ -77,7 +77,7 @@ function GameResult() {
           />
         )}
         <h4>THE HOUSE PICKED</h4>
-        <div className={`round ${randomChoiceColor}`}>
+        <div className={`round ${randomChoiceColor}`} data-aos="zoom-in">
           <div className="inner-round">
             <img src={randomChoiceImage} alt="" />
           </div>
