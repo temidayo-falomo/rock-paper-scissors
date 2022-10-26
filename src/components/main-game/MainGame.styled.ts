@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 export const StyledMainGame = styled.section`
-  height: 60vh;
+ 
   margin: 1rem auto;
+  margin-top: 3rem;
   display: grid;
   place-content: center;
   width: 70%;
@@ -40,8 +41,8 @@ export const StyledMainGame = styled.section`
   }
 
   .pentagon {
-    height: 550px;
     width: 550px;
+    margin-bottom: 4rem;
 
     .round {
       cursor: pointer;
@@ -58,9 +59,22 @@ export const StyledMainGame = styled.section`
         rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px,
         rgba(0, 0, 0, 0.07) 0px 32px 64px;
 
-        :hover {
-          transform: scale(1.3);
-        }
+      :hover {
+        transform: scale(1.3);
+      }
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .pentagon {
+      width: 300px;
+
+      .round {
+        height: 100px;
+        width: 100px;
+        min-height: 100px;
+        min-width: 100px;
+      }
     }
   }
 `;

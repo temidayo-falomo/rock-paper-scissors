@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect } from "react";
 import { choices } from "../../data";
 import { AppContext } from "../../helper/Context";
 import { StyledGameResult } from "./GameResult.styled";
@@ -61,8 +61,8 @@ function GameResult() {
         </div>
       </div>
 
-      <div className="col gap-1 center upp">
-        <h1>YOU {result}</h1>
+      <div className="col gap-1 center upp mid">
+        <h1 style={{ textAlign: "center" }}>YOU {result}</h1>
         <p>( -{result === "Draw" ? "draws" : info}- )</p>
         <button onClick={handleButtonClick}>PLAY AGAIN</button>
       </div>
@@ -77,7 +77,7 @@ function GameResult() {
           />
         )}
         <h4>THE HOUSE PICKED</h4>
-        <div className={`round ${randomChoiceColor}`} data-aos="zoom-in">
+        <div className={`round ${randomChoiceColor}`}>
           <div className="inner-round">
             <img src={randomChoiceImage} alt="" />
           </div>

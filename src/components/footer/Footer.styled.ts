@@ -2,14 +2,17 @@ import styled from "styled-components";
 
 export const StyledFooter = styled.footer`
   width: 70%;
+  height: 20vh;
   margin: 1rem auto;
-  position: fixed;
+  margin-top: 2rem;
+  /* position: absolute; */
   bottom: 2rem;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  left: 50%;
-  transform: translateX(-50%);
+
+  /* left: 50%;
+  transform: translateX(-50%); */
 
   button {
     padding: 15px;

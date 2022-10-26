@@ -1,11 +1,13 @@
 import styled from "styled-components";
 
 export const StyledGameResult = styled.div`
-  height: 60vh;
+  /* height: 60vh; */
   margin: 1rem auto;
+  margin-top: 5rem;
   width: 70%;
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
   align-items: center;
 
   .yellow {
@@ -39,6 +41,8 @@ export const StyledGameResult = styled.div`
       z-index: -1;
       top: -6.5rem;
       right: -9rem;
+      left: 50% !important;
+      transform: translateX(-50%) !important;
     }
   }
 
@@ -94,6 +98,36 @@ export const StyledGameResult = styled.div`
 
       img {
         width: 90px;
+        align-self: center;
+      }
+    }
+  }
+
+  @media (max-width: 1000px) {
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    justify-content: space-between;
+    gap: 2rem;
+
+    .mid {
+      display: none;
+    }
+
+    .circle-bg {
+      width: 400px !important;
+      /* top: -4rem !important;
+      left: 50% !important;
+      transform: translateX(-50%) !important; */
+    }
+
+    .round {
+      width: 120px;
+      height: 120px;
+
+      img {
+        width: 40px !important;
       }
     }
   }
