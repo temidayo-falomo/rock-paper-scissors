@@ -6,7 +6,7 @@ import { AppContext } from "./helper/Context";
 import Home from "./pages/home/Home";
 
 function App() {
-  const [score, setScore] = useState<number>(10);
+  const [score, setScore] = useState<number>(0);
   const [clickedBtn, setClickedBtn] = useState<boolean>(false);
   const [picked, setPicked] = useState<string>("");
 
