@@ -5,11 +5,11 @@ export const StyledFooter = styled.footer`
   height: 20vh;
   margin: 1rem auto;
   margin-top: 2rem;
-  /* position: absolute; */
   bottom: 2rem;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  padding-bottom: 2rem;
 
   button {
     padding: 15px;
